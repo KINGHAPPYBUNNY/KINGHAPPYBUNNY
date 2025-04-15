@@ -1,0 +1,158 @@
+h1 {
+    color: blue;
+    text-shadow: 2px 2px 1px red;
+}
+
+h6 {
+    color: red;
+    text-shadow: 2px 2px 1px blue;
+}
+
+h3 {
+    color: blue;
+}
+
+p {
+    font-family: Times New Roman;
+    font-size: 20px;
+    color: purple;
+}
+
+.container {
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background-color: none;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: red;
+}
+
+button {
+    transition: background-color 0.5s ease;
+}
+
+@keyframes col_example {
+    from {
+        color: blue;
+    }
+    to {
+        color: RED;
+    }
+}
+
+button {
+    animation-name: col_example;
+    animation-duration: 10s;
+}
+
+.social {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social i {
+    font-size: 40px;
+    margin: 0 15px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.fa-facebook:hover {
+    color: #007bff;
+    /* Hover color for facebook icon */
+}
+
+.fa-twitter:hover {
+    color: #007bff;
+    /* Hover color for twitter icon */
+}
+
+.fa-instagram:hover {
+    color: linear-gradient(to right, red, brown);
+    font-size: 45px;
+    transition-property: color, font-size;
+    transition-duration: 2ms, 0ms;
+    /* Hover color for facebook icon */
+}
+
+.social p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.fsocial a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+body {
+    background: linear-gradient(to bottom, blue, rgb(116, 124, 243), aquamarine);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%, 100%;
+}
+
+.logo {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: red;
+    text-shadow: 2px 2px 4px blue;
+}
+
+.home:hover {
+    background-color: rgb(59, 35, 35);
+    font-size: 20px;
+    transition-property: color, font-size;
+    transition-duration: 2ms, 0ms;
+}
+
+
+/*to make the buttton zoom in and change colors*/
+
+.au:hover {
+    background-color: rgb(196, 106, 106);
+    font-size: 20px;
+    transition-property: color, font-size;
+    transition-duration: 2ms, 0ms;
+}
+
+
+/*to make the buttton zoom in and change colors*/
+
+.ci:hover {
+    background-color: rgb(131, 37, 37);
+    font-size: 20px;
+    transition-property: color, font-color;
+    transition-duration: 2ms, 0ms;
+}
+
+
+/*to make the buttton zoom in and change colors*/
+
+.credit:hover {
+    background-color: blueviolet;
+    font-size: 20px;
+    transition-property: color, font-size;
+    transition-duration: 2ms, 0ms;
+}
+
+
+/*to make the buttton zoom in and change colors*/
+
+.his:hover {
+    background-color: royalblue;
+    font-size: 20px;
+    transition-property: color, font-size;
+    transition-duration: 2ms, 0ms;
+}
+
+
+/*to make the buttton zoom in and change colors*/

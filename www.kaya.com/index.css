@@ -1,0 +1,57 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.logo {
+    color: aquamarine
+}
+
+.main {
+    width: 100%;
+    background: liner-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(./c.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109 vh;
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    padding: auto;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: chocolate;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 40px;
+}
+
+.container {
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 65px;
+    margin-top: 27px;
+    font-size: 14px;
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <title>www.kunoluarts.com/aboutus</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanded Toggle Menu</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" type="text/css" href="ABOUT US .css">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    </br>
+    <div class="container">
+        <a href="first page.html"><button class="home">home</button></a>
+        <a href="aboutus.html"><button class="au">aboutus</button></a>
+        <a href="contact.html"><button class="ci">contactInfo</button></a>
+        <a href="credits.html"><button class="credit">credits</button></a>
+        <a href="history.html"><button class="his">history</button></a>
+    </div>
+    </br>
+    <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100093259244962" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-gmail"></i>
+    </div>
+    <form method="post" action="HOME.html">
+        <textarea name="post" size="19"></textarea>
+        <button type="submit">post</button>
+    </form>
+    <ul class="menu">
+        <div class="toggleBtn">
+            <ion-icon name="add-outline"></ion-icon>
+        </div>
+        <li style="--i:0; --x:-150px; --y:0px; --clr: rgb(183, 255, 0);">
+            <a href="#">
+                <ion-icon name="person-outline"></ion-icon>
+            </a>
+        </li>
+        <li style="--i:1; --x:150px; --y:0px; --clr: rgb(255, 174, 0); ">
+            <a href="#">
+                <ion-icon name="code-slash-outline"></ion-icon>
+            </a>
+        </li>
+        <li style="--i:2; --x:0px; --y:-150px;  --clr: rgb(43, 255, 0);  ">
+            <a href="#">
+                <ion-icon name="flower-outline"></ion-icon>
+            </a>
+        </li>
+        <li style="--i:3; --x:105px; --y:105px; --clr: rgb(255, 0, 43); ">
+            <a href="#">
+                <ion-icon name="image-outline"></ion-icon>
+            </a>
+        </li>
+        <li style="--i:4; --x:-105px; --y:-105px; --clr: rgb(0, 255, 187);">
+            <a href="#">
+                <ion-icon name="navigate-outline"></ion-icon>
+            </a>
+        </li>
+        <li style="--i:5; --x:0px; --y:150px; --clr: rgb(0, 153, 255);">
+            <a href="#">
+                <ion-icon name="mail-unread-outline"></ion-icon>
+            </a>
+        </li>
+        <li style="--i:6; --x:105px; --y:-105px; --clr: rgb(185, 100, 255);">
+            <a href="#">
+                <ion-icon name="laptop-outline"></ion-icon>
+            </a>
+        </li>
+        <li style="--i:7; --x:-105px; --y:105px; --clr: rgb(255, 0, 200);">
+            <a href="#">
+                <ion-icon name="notifications-outline"></ion-icon>
+            </a>
+        </li>
+    </ul>
+    <script>
+        let toggleBtn = document.querySelector('.toggleBtn');
+        let menu = document.querySelector('.menu');
+        toggleBtn.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+<div class="logo">
+    <footer>
+        &copy;kunoluarts 2024
+    </footer>
+</div>
+
+</html>
