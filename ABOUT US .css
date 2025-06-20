@@ -1,0 +1,120 @@
+body {
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: red;
+    text-shadow: 2px 2px 4px blue;
+}
+
+
+/*for the footer*/
+
+.home:hover {
+    background-color: rgb(59, 35, 35);
+    font-size: 20px;
+    transition-property: color, font-size;
+    transition-duration: 2ms, 0ms;
+}
+
+
+/*to make the buttton zoom in and change colors*/
+
+.au:hover {
+    background-color: rgb(196, 106, 106);
+    font-size: 20px;
+    transition-property: color, font-size;
+    transition-duration: 2ms, 0ms;
+}
+
+
+/*to make the buttton zoom in and change colors*/
+
+.ci:hover {
+    background-color: rgb(131, 37, 37);
+    font-size: 20px;
+    transition-property: color, font-color;
+    transition-duration: 2ms, 0ms;
+}
+
+
+/*to make the buttton zoom in and change colors*/
+
+.credit:hover {
+    background-color: blueviolet;
+    font-size: 20px;
+    transition-property: color, font-size;
+    transition-duration: 2ms, 0ms;
+}
+
+
+/*to make the buttton zoom in and change colors*/
+
+.his:hover {
+    background-color: royalblue;
+    font-size: 20px;
+    transition-property: color, font-size;
+    transition-duration: 2ms, 0ms;
+}
+
+
+/*to make the buttton zoom in and change colors*/
+
+button {
+    transition: background-color 0.5s ease;
+}
+
+@keyframes col_example {
+    from {
+        color: blue;
+    }
+    to {
+        color: RED;
+    }
+}
+
+button {
+    animation-name: col_example;
+    animation-duration: 10s;
+}
+
+.menu {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.menu.active {
+    width: 400px;
+    height: 400px;
+}
+
+.menu li {
+    position: absolute;
+    list-style-type: none;
+    transform: translate(0, 0) scale(0);
+    transition: 0.5s;
+    opacity: 0;
+    width: 60px;
+    height: 60px;
+}
+
+.menu.active li {
+    transform: translate(var(--x), var(--y)) scale(1);
+    opacity: 1;
+    transition-delay: calc(0.1s * var(--i));
+}
