@@ -1,3 +1,4 @@
+/* Headings */
 h1 {
     color: blue;
     text-shadow: 2px 2px 1px red;
@@ -12,45 +13,47 @@ h3 {
     color: blue;
 }
 
+/* Paragraph text */
 p {
-    font-family: Times New Roman;
+    font-family: "Times New Roman", serif;
     font-size: 20px;
     color: purple;
 }
 
+/* Container */
 .container {
     text-align: center;
     display: inline-block;
     margin: 5px;
     padding: 10px;
-    background-color: none;
+    background-color: transparent;
     color: #333;
     text-decoration: none;
     border-radius: 5px;
+}
+
+/* Button base and animation */
+button {
+    transition: background-color 0.5s ease;
+    animation-name: col_example;
+    animation-duration: 10s;
 }
 
 button:hover {
     background-color: red;
 }
 
-button {
-    transition: background-color 0.5s ease;
-}
-
+/* Keyframe for button text color animation */
 @keyframes col_example {
     from {
         color: blue;
     }
     to {
-        color: RED;
+        color: red;
     }
 }
 
-button {
-    animation-name: col_example;
-    animation-duration: 10s;
-}
-
+/* Social media section */
 .social {
     text-align: center;
     margin-top: 20px;
@@ -63,24 +66,25 @@ button {
     transition: color 0.3s ease;
 }
 
-.fa-facebook:hover {
-    color: #007bff;
-    /* Hover color for facebook icon */
-}
-
+/* Social icons hover */
+.fa-facebook:hover,
 .fa-twitter:hover {
     color: #007bff;
-    /* Hover color for twitter icon */
+}
+
+/* Instagram gradient workaround using background-clip */
+.fa-instagram {
+    background: linear-gradient(to right, red, brown);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: font-size 0.3s ease;
 }
 
 .fa-instagram:hover {
-    color: linear-gradient(to right, red, brown);
     font-size: 45px;
-    transition-property: color, font-size;
-    transition-duration: 2ms, 0ms;
-    /* Hover color for facebook icon */
 }
 
+/* Social text and links */
 .social p {
     font-size: 16px;
     margin-top: 10px;
@@ -91,13 +95,15 @@ button {
     color: #007bff;
 }
 
+/* Background gradient */
 body {
     background: linear-gradient(to bottom, blue, rgb(116, 124, 243), aquamarine);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%, 100%;
+    background-size: 100% 100%;
 }
 
+/* Fixed logo styling */
 .logo {
     position: fixed;
     bottom: 0;
@@ -107,52 +113,33 @@ body {
     text-shadow: 2px 2px 4px blue;
 }
 
-.home:hover {
-    background-color: rgb(59, 35, 35);
+/* Generic hover styles for menu buttons */
+.home:hover,
+.au:hover,
+.ci:hover,
+.credit:hover,
+.his:hover {
     font-size: 20px;
-    transition-property: color, font-size;
-    transition-duration: 2ms, 0ms;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
 }
 
-
-/*to make the buttton zoom in and change colors*/
+/* Individual background colors on hover */
+.home:hover {
+    background-color: rgb(59, 35, 35);
+}
 
 .au:hover {
     background-color: rgb(196, 106, 106);
-    font-size: 20px;
-    transition-property: color, font-size;
-    transition-duration: 2ms, 0ms;
 }
-
-
-/*to make the buttton zoom in and change colors*/
 
 .ci:hover {
     background-color: rgb(131, 37, 37);
-    font-size: 20px;
-    transition-property: color, font-color;
-    transition-duration: 2ms, 0ms;
 }
-
-
-/*to make the buttton zoom in and change colors*/
 
 .credit:hover {
     background-color: blueviolet;
-    font-size: 20px;
-    transition-property: color, font-size;
-    transition-duration: 2ms, 0ms;
 }
-
-
-/*to make the buttton zoom in and change colors*/
 
 .his:hover {
     background-color: royalblue;
-    font-size: 20px;
-    transition-property: color, font-size;
-    transition-duration: 2ms, 0ms;
 }
-
-
-/*to make the buttton zoom in and change colors*/
