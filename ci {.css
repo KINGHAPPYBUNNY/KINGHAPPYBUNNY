@@ -60,10 +60,10 @@ button:hover {
 }
 
 .social i {
-    font-size: 20px;
+    font-size: 40px;
     margin: 0 15px;
     color: #333;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 /* Social icons hover */
@@ -72,15 +72,11 @@ button:hover {
     color: #007bff;
 }
 
-/* Instagram gradient workaround using background-clip */
-.fa-instagram {
-    background: linear-gradient(to right, red, brown);
+/* Instagram hover with official gradient */
+.fa-instagram:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: font-size 0.3s ease;
-}
-
-.fa-instagram:hover {
     font-size: 45px;
 }
 
