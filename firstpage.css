@@ -1,142 +1,48 @@
-/* ===== Theme Variables ===== */
 :root {
-    --bg-color: white;
+    --bg-image: url('./photos/kunolu.png');
     --text-color: black;
-    --heading-color: blue;
-    --subheading-color: red;
-    --paragraph-color: purple;
+    --h1-color: blue;
+    --h6-color: red;
+    --h3-color: blue;
+    --p-color: purple;
     --ol-color: white;
+    --table-color: purple;
     --logo-color: aquamarine;
 }
 
 [data-theme="dark"] {
-    --bg-color: #121212;
+    --bg-image: none;
     --text-color: #f0f0f0;
-    --heading-color: #87ceeb;
-    --subheading-color: #ff6666;
-    --paragraph-color: #d8b0ff;
+    --h1-color: #87ceeb;
+    --h6-color: #ff6666;
+    --h3-color: #7db4ff;
+    --p-color: #d8b0ff;
     --ol-color: #ccc;
+    --table-color: #bb86fc;
     --logo-color: lightblue;
 }
 
-/* ===== Global & Background ===== */
-body {
-    background-image: url('./photos/kunolu.png');
+body { 
+    background-image: var(--bg-image);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    background-color: var(--bg-color);
     color: var(--text-color);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* ===== Headings & Text ===== */
 h1 {
-    color: var(--heading-color);
+    color: var(--h1-color);
     text-shadow: 2px 2px 1px red;
 }
 
 h6 {
-    color: var(--subheading-color);
+    color: var(--h6-color);
     text-shadow: 2px 2px 1px blue;
 }
 
 h3 {
-    color: var(--heading-color);
+    color: var(--h3-color);
 }
 
 p {
-    font-family: "Times New Roman", serif;
-    font-size: 20px;
-    color: var(--paragraph-color);
-}
-
-ol {
-    color: var(--ol-color);
-}
-
-textarea {
-    width: 100%;
-}
-
-/* ===== Table ===== */
-table {
-    color: var(--paragraph-color);
-    align-content: center;
-}
-
-/* ===== Navigation Buttons ===== */
-.container {
-    text-align: center;
-    display: inline-block;
-    margin: 5px;
-    padding: 10px;
-    background-color: transparent;
-    font-size: 30px;
-    border-radius: 5px;
-}
-
-/* Repeated definition removed */
-.logo {
-    color: var(--logo-color);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    text-shadow: 2px 2px 4px blue;
-}
-
-/* ===== Section Background (optional section) ===== */
-.main {
-    width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url('c.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 109vh;
-}
-
-/* ===== Hover Effects for Navigation Buttons ===== */
-.home:hover {
-    background-color: rgb(59, 35, 35);
-    font-size: 20px;
-}
-
-.au:hover {
-    background-color: rgb(196, 106, 106);
-    font-size: 20px;
-}
-
-.ci:hover {
-    background-color: rgb(131, 37, 37);
-    font-size: 20px;
-}
-
-.credit:hover {
-    background-color: blueviolet;
-    font-size: 20px;
-}
-
-.his:hover {
-    background-color: royalblue;
-    font-size: 20px;
-}
-
-button {
-    transition: background-color 0.5s ease;
-    animation-name: col_example;
-    animation-duration: 10s;
-}
-
-/* ===== Animation Example ===== */
-@keyframes col_example {
-    from {
-        color: blue;
-    }
-    to {
-        color: red;
-    }
-}
+    font-family: Times New Roman;
