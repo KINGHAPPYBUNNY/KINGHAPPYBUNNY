@@ -56,3 +56,44 @@
 
     <table border="1" cellpadding="10">
         <caption> table t</caption>
+        <tr>
+            <th> dt</th>
+            <th> td</th>
+        </tr>
+        <tr>
+            <td>im the best </td>
+        </tr>
+    </table>
+    </br>
+
+    <div class="logo">
+        <footer>
+            &copy;kunoluarts 2024
+        </footer>
+    </div>
+
+    <!-- Dark Mode Toggle Button -->
+    <button onclick="toggleTheme()" style="
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        z-index: 1000;
+    ">
+        🌙 Toggle Dark Mode
+    </button>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const current = html.getAttribute('data-theme');
+            html.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+        }
+    </script>
+</body>
+</html>
