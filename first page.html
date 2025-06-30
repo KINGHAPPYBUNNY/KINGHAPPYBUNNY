@@ -1,75 +1,109 @@
-<!doctype html>
-
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
 <head>
-    <link rel="stylesheet" TYPE="text/css" href="firstpage.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kunolu Arts</title>
+    <link rel="stylesheet" href="firstpage.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 </head>
-<meta charset="UTF-8">
-<title> www.kunoluarts.com
-</title>
 
 <body>
-    <div class="container">
-        <a href="first page.html"><button class="home">home</button></a>
-        <a href="aboutus.html"><button class="au">aboutus</button></a>
-        <a href="contact.html"><button class="ci">contactInfo</button></a>
-        <a href="credits.html"><button class="credit">credits</button></a>
-        <a href="history.html"><button class="his">history</button></a>
-    </div>
+    <!-- Dark Mode Toggle -->
+    <button class="toggle-theme" onclick="toggleTheme()">🌙 Toggle Dark Mode</button>
 
+    <!-- Logo & Header -->
+    <header class="logo-header">
+        <img src="images/kunolu-logo.png" alt="Kunolu Arts Logo" class="logo" />
+        <h1>Welcome to Kunolu Arts</h1>
+    </header>
 
-    <h1>
-        <marquee>welcome to KUNOLU ARTS </h1>
-    </marquee>
-    </br>
-    <form>
-        <input></input>
-        <button>search</button>
-    </form>
-    </br>
+    <!-- Navigation -->
+    <nav class="container">
+        <a class="home" href="first page.html">Home</a>
+        <a class="au" href="aboutus.html">About Us</a>
+        <a class="ci" href="contact.html">Contact Info</a>
+        <a class="credit" href="credits.html">Credits</a>
+        <a class="his" href="history.html">History</a>
+    </nav>
 
-    <bdo dir="ltr"> <textarea></textarea></bdo></br>
+    <!-- Search -->
+    <section class="search-section">
+        <form>
+            <input type="text" placeholder="Search..." />
+            <button type="submit">Search</button>
+        </form>
+    </section>
 
-    <form>
-        <h6><strong>THIS IS A COVER ART DONE BY THE COMPANY FOR THE COMPANY </strong></h6>
-        <img src="./photos/kunolu.png" alt="kunolu art cover" height="30%" width="30%"></br><button>download</button>
-    </form>
-    </br>
-    <h3>things we offer </h3>
-    </br>
-    <OL>
-        <LI>GRAPHIC DESIGN
-            <Ul TYPE="square">
-                <li>cover arts</li>
-                <li>movie posters</li>
-                <li>event flyers</li>
-            </ul>
-        </LI>
+    <!-- Text Input -->
+    <section>
+        <textarea placeholder="Write something..."></textarea>
+    </section>
 
-    </OL>
-    </br>
-   
-        
-        <img scr="fizzo.png" alt="fizzo" height="30%" width="30%">
-    
-    </br>
-   
-    <table border="1" cellpadding="10">
-        <caption> table t</caption>
-        <tr>
-            <th> dt</th>
-            <th> td</th>
-        </tr>
-        <tr>
-            <td>im the best </td>
-        </tr>
-    </table>
-    </br>
+    <!-- Cover Art -->
+    <section class="cover-art">
+        <h2>Cover Art Made by Kunolu Arts</h2>
+        <img src="images/art1.png" alt="Cover Art" width="30%" />
+        <a href="images/art1.png" download>
+            <button type="button">Download</button>
+        </a>
+    </section>
 
-    <div class="logo">
-        <footer>
-            &copy;kunoluarts 2024
-        </footer>
-    </div>
+    <!-- Gallery -->
+    <section class="gallery">
+        <h2>Gallery of Our Work</h2>
+        <div class="gallery-images">
+            <img src="images/art1.png" alt="Artwork 1" />
+            <img src="images/art2.png" alt="Artwork 2" />
+            <img src="images/art3.png" alt="Artwork 3" />
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section>
+        <h3>Things We Offer</h3>
+        <ol>
+            <li>Graphic Design
+                <ul>
+                    <li>Cover Arts</li>
+                    <li>Movie Posters</li>
+                    <li>Event Flyers</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Table -->
+    <section>
+        <table>
+            <caption>Sample Table</caption>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>I'm the best</td>
+                    <td>More info</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; Kunolu Arts 2024
+    </footer>
+
+    <!-- Dark Mode Script -->
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute("data-theme");
+            html.setAttribute("data-theme", currentTheme === "light" ? "dark" : "light");
+        }
+    </script>
 </body>
-
 </html>
