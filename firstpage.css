@@ -1,48 +1,80 @@
-:root {
-    --bg-image: url('./photos/kunolu.png');
-    --text-color: black;
-    --h1-color: blue;
-    --h6-color: red;
-    --h3-color: blue;
-    --p-color: purple;
-    --ol-color: white;
-    --table-color: purple;
-    --logo-color: aquamarine;
+/* DARK MODE STYLES */
+[data-theme="dark"] body {
+    background-color: #121212;
+    background-image: none;
+    color: #f0f0f0;
 }
 
-[data-theme="dark"] {
-    --bg-image: none;
-    --text-color: #f0f0f0;
-    --h1-color: #87ceeb;
-    --h6-color: #ff6666;
-    --h3-color: #7db4ff;
-    --p-color: #d8b0ff;
-    --ol-color: #ccc;
-    --table-color: #bb86fc;
-    --logo-color: lightblue;
+[data-theme="dark"] h1 {
+    color: #87ceeb;
+    text-shadow: 2px 2px 1px #222;
 }
 
+[data-theme="dark"] h6 {
+    color: #ff6666;
+    text-shadow: 2px 2px 1px #000;
+}
+
+[data-theme="dark"] h3 {
+    color: #9ecbff;
+}
+
+[data-theme="dark"] p {
+    color: #e0aaff;
+}
+
+[data-theme="dark"] ol {
+    color: #cccccc;
+}
+
+[data-theme="dark"] table {
+    color: #cbaaff;
+}
+
+[data-theme="dark"] .container {
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] .logo {
+    color: lightblue;
+    text-shadow: 2px 2px 4px #000;
+}
+
+
+/* ORIGINAL CSS */
 body { 
-    background-image: var(--bg-image);
+    background-image: url('./photos/kunolu.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    color: var(--text-color);
 }
 
 h1 {
-    color: var(--h1-color);
+    color: blue;
     text-shadow: 2px 2px 1px red;
 }
 
 h6 {
-    color: var(--h6-color);
+    color: red;
     text-shadow: 2px 2px 1px blue;
 }
 
 h3 {
-    color: var(--h3-color);
+    color: blue;
 }
 
 p {
     font-family: Times New Roman;
+    font-size: 20px;
+    color: purple;
+}
+
+ol {
+    color: white;
+}
+
+textarea {
+    width: "100%";
+}
+
+table {
