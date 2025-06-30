@@ -1,23 +1,23 @@
 /* Headings */
 h1 {
-    color: blue;
-    text-shadow: 2px 2px 1px red;
+    color: #1e3a8a; /* Deep blue */
+    text-shadow: 1px 1px 2px #93c5fd; /* Soft blue glow */
 }
 
 h6 {
-    color: red;
-    text-shadow: 2px 2px 1px blue;
+    color: #9333ea; /* Vibrant purple */
+    text-shadow: 1px 1px 2px #d8b4fe;
 }
 
 h3 {
-    color: blue;
+    color: #1e40af;
 }
 
 /* Paragraph text */
 p {
-    font-family: "Times New Roman", serif;
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
     font-size: 20px;
-    color: blue;
+    color: #2f3e46;
 }
 
 /* Container */
@@ -25,11 +25,12 @@ p {
     text-align: center;
     display: inline-block;
     margin: 5px;
-    padding: 10px;
-    background-color: transparent;
-    color: #333;
+    padding: 10px 20px;
+    background-color: #f0f4f8;
+    color: #1f2937;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Button base and animation */
@@ -37,19 +38,25 @@ button {
     transition: background-color 0.5s ease;
     animation-name: col_example;
     animation-duration: 10s;
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: red;
+    background-color: #2563eb;
 }
 
 /* Keyframe for button text color animation */
 @keyframes col_example {
     from {
-        color: blue;
+        color: #3b82f6;
     }
     to {
-        color: red;
+        color: #f87171;
     }
 }
 
@@ -62,14 +69,14 @@ button:hover {
 .social i {
     font-size: 40px;
     margin: 0 15px;
-    color: #333;
+    color: #374151;
     transition: all 0.3s ease;
 }
 
 /* Social icons hover */
 .fa-facebook:hover,
 .fa-twitter:hover {
-    color: #007bff;
+    color: #1d4ed8;
 }
 
 /* Instagram hover with official gradient */
@@ -88,15 +95,19 @@ button:hover {
 
 .fsocial a {
     text-decoration: none;
-    color: #007bff;
+    color: #2563eb;
 }
 
 /* Background gradient */
 body {
-    background: linear-gradient(to bottom, blue, rgb(116, 124, 243), aquamarine);
+    background: linear-gradient(to bottom, #e0f7fa, #dbeafe, #f0fdf4);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: cover;
+    color: #1f2937;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
 }
 
 /* Fixed logo styling */
@@ -105,8 +116,11 @@ body {
     bottom: 0;
     width: 100%;
     text-align: center;
-    color: red;
-    text-shadow: 2px 2px 4px blue;
+    color: #dc2626;
+    text-shadow: 1px 1px 2px #60a5fa;
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 /* Generic hover styles for menu buttons */
@@ -117,25 +131,26 @@ body {
 .his:hover {
     font-size: 20px;
     transition: background-color 0.3s ease, font-size 0.3s ease;
+    color: white;
 }
 
 /* Individual background colors on hover */
 .home:hover {
-    background-color: rgb(59, 35, 35);
+    background-color: #1e293b;
 }
 
 .au:hover {
-    background-color: rgb(196, 106, 106);
+    background-color: #f97316;
 }
 
 .ci:hover {
-    background-color: rgb(131, 37, 37);
+    background-color: #be123c;
 }
 
 .credit:hover {
-    background-color: blueviolet;
+    background-color: #7c3aed;
 }
 
 .his:hover {
-    background-color: royalblue;
+    background-color: #2563eb;
 }
