@@ -1,18 +1,18 @@
-/* DARK MODE STYLES */
+/* ========= DARK MODE OVERRIDES ========= */
 [data-theme="dark"] body {
-    background-color: #121212;
+    background-color: #121212; /* darker charcoal */
     background-image: none;
     color: #f0f0f0;
 }
 
 [data-theme="dark"] h1 {
     color: #87ceeb;
-    text-shadow: 2px 2px 1px #222;
+    text-shadow: 2px 2px 1px #000;
 }
 
 [data-theme="dark"] h6 {
     color: #ff6666;
-    text-shadow: 2px 2px 1px #000;
+    text-shadow: 2px 2px 1px #111;
 }
 
 [data-theme="dark"] h3 {
@@ -41,8 +41,9 @@
 }
 
 
-/* ORIGINAL CSS */
+/* ========= ORIGINAL STYLES ========= */
 body { 
+    background-color: #2B2B2B; /* charcoal black */
     background-image: url('./photos/kunolu.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -74,7 +75,105 @@ ol {
 }
 
 textarea {
-    width: "100%";
+    width: 100%;
 }
 
 table {
+    color: purple;
+    align-content: center;
+}
+
+.container {
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background-color: none;
+    color: #333;
+    font-size: 30;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.container {
+    text-align: center;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.logo {
+    color: aquamarine;
+}
+
+.main {
+    width: 100%;
+    background: liner-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(c.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109 vh;
+}
+
+.logo {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: red;
+    text-shadow: 2px 2px 4px blue;
+}
+
+.home:hover {
+    background-color: rgb(59, 35, 35);
+    font-size: 20px;
+    transition-property: color, font-size;
+    transition-duration: 2ms, 0ms;
+}
+
+.au:hover {
+    background-color: rgb(196, 106, 106);
+    font-size: 20px;
+    transition-property: color, font-size;
+    transition-duration: 2ms, 0ms;
+}
+
+.ci:hover {
+    background-color: rgb(131, 37, 37);
+    font-size: 20px;
+    transition-property: color, font-color;
+    transition-duration: 2ms, 0ms;
+}
+
+.credit:hover {
+    background-color: blueviolet;
+    font-size: 20px;
+    transition-property: color, font-size;
+    transition-duration: 2ms, 0ms;
+}
+
+.his:hover {
+    background-color: royalblue;
+    font-size: 20px;
+    transition-property: color, font-size;
+    transition-duration: 2ms, 0ms;
+}
+
+button {
+    transition: background-color 0.5s ease;
+}
+
+@keyframes col_example {
+    from {
+        color: blue;
+    }
+    to {
+        color: RED;
+    }
+}
+
+button {
+    animation-name: col_example;
+    animation-duration: 10s;
+}
