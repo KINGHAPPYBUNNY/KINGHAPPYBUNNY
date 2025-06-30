@@ -1,100 +1,88 @@
-<!doctype html>
-<html lang="en" data-theme="light">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <title> www.kunoluarts.com </title>
-    <link rel="stylesheet" TYPE="text/css" href="firstpage.css">
+  <meta charset="UTF-8">
+  <title>www.kunoluarts.com</title>
+  <link rel="stylesheet" href="firstpage.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    button {
+      cursor: pointer;
+    }
+  </style>
 </head>
-
 <body>
-    <div class="container">
-        <a href="first page.html"><button class="home">home</button></a>
-        <a href="aboutus.html"><button class="au">aboutus</button></a>
-        <a href="contact.html"><button class="ci">contactInfo</button></a>
-        <a href="credits.html"><button class="credit">credits</button></a>
-        <a href="history.html"><button class="his">history</button></a>
-    </div>
+  <div class="container">
+    <a href="first page.html"><button class="btn-neon">Home</button></a>
+    <a href="aboutus.html"><button class="btn-gradient">About Us</button></a>
+    <a href="contact.html"><button class="btn-cyberpunk">Contact Info</button></a>
+    <a href="credits.html"><button class="btn-glass">Credits</button></a>
+    <a href="history.html"><button class="btn-frosted">History</button></a>
+  </div>
 
-    <h1>
-        <marquee>welcome to KUNOLU ARTS </marquee>
-    </h1>
-    </br>
+  <h1><marquee>Welcome to KUNOLU ARTS</marquee></h1>
+  <br>
 
-    <form>
-        <input></input>
-        <button>search</button>
-    </form>
-    </br>
+  <form>
+    <input placeholder="Search...">
+    <button class="btn-pulse">Search</button>
+  </form>
+  <br>
 
-    <bdo dir="ltr">
-        <textarea></textarea>
-    </bdo>
-    </br>
+  <bdo dir="ltr"><textarea placeholder="Type here..."></textarea></bdo>
+  <br>
 
-    <form>
-        <h6><strong>THIS IS A COVER ART DONE BY THE COMPANY FOR THE COMPANY </strong></h6>
-        <img src="./photos/kunolu.png" alt="kunolu art cover" height="30%" width="30%" /></br>
-        <button>download</button>
-    </form>
-    </br>
+  <form>
+    <h6><strong>This is a cover art done by the company for the company</strong></h6>
+    <img src="./photos/kunolu.png" alt="Kunolu Art Cover" height="30%" width="30%"><br>
+    <button class="btn-arcade">Download</button>
+  </form>
+  <br>
 
-    <h3>things we offer </h3>
-    </br>
-    <OL>
-        <LI>GRAPHIC DESIGN
-            <Ul TYPE="square">
-                <li>cover arts</li>
-                <li>movie posters</li>
-                <li>event flyers</li>
-            </ul>
-        </LI>
-    </OL>
-    </br>
+  <h3>Things we offer</h3>
+  <br>
+  <ol>
+    <li>GRAPHIC DESIGN
+      <ul type="square">
+        <li>Cover Arts</li>
+        <li>Movie Posters</li>
+        <li>Event Flyers</li>
+      </ul>
+    </li>
+  </ol>
+  <br>
 
-    <img src="fizzo.png" alt="fizzo" height="30%" width="30%" />
+  <img src="fizzo.png" alt="Fizzo" height="30%" width="30%">
+  <br>
 
-    </br>
+  <table border="1" cellpadding="10">
+    <caption>Table T</caption>
+    <tr>
+      <th>DT</th>
+      <th>TD</th>
+    </tr>
+    <tr>
+      <td>I'm the best</td>
+      <td>Proven</td>
+    </tr>
+  </table>
+  <br>
 
-    <table border="1" cellpadding="10">
-        <caption> table t</caption>
-        <tr>
-            <th> dt</th>
-            <th> td</th>
-        </tr>
-        <tr>
-            <td>im the best </td>
-        </tr>
-    </table>
-    </br>
-
-    <div class="logo">
-        <footer>
-            &copy;kunoluarts 2024
-        </footer>
-    </div>
-
-    <!-- Dark Mode Toggle Button -->
-    <button onclick="toggleTheme()" style="
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        padding: 10px;
-        background-color: black;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        z-index: 1000;
-    ">
-        🌙 Toggle Dark Mode
-    </button>
-
-    <script>
-        function toggleTheme() {
-            const html = document.documentElement;
-            const current = html.getAttribute('data-theme');
-            html.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
-        }
-    </script>
+  <div class="logo">
+    <footer>&copy; Kunolu Arts 2024</footer>
+  </div>
 </body>
 </html>
