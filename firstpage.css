@@ -1,8 +1,8 @@
 /* ========= DARK MODE OVERRIDES ========= */
 [data-theme="dark"] body {
-    background-color: #121212; /* darker charcoal */
-    background-image: none;
+    background: linear-gradient(to bottom right, #121212, #1f1f1f, #2b2b2b);
     color: #f0f0f0;
+    background-image: none;
 }
 
 [data-theme="dark"] h1 {
@@ -41,13 +41,12 @@
 }
 
 
-/* ========= ORIGINAL STYLES ========= */
+/* ========= CUSTOM BACKGROUND FOR KUNOLU ARTS ========= */
 body { 
-    background-color: #2B2B2B; /* charcoal black */
-    background-image: url('./photos/kunolu.png');
+    background: linear-gradient(to bottom right, #1f1f1f, #2b2b2b, #3c3c3c); /* Kunolu creative background */
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 h1 {
@@ -106,23 +105,16 @@ table {
 
 .logo {
     color: aquamarine;
+    text-align: center;
+    text-shadow: 2px 2px 4px blue;
 }
 
 .main {
     width: 100%;
-    background: liner-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(c.jpg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(c.jpg);
     background-position: center;
     background-size: cover;
-    height: 109 vh;
-}
-
-.logo {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    color: red;
-    text-shadow: 2px 2px 4px blue;
+    height: 109vh;
 }
 
 .home:hover {
