@@ -1,112 +1,162 @@
-/* General Reset */
+/* Reset and Base Layout */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base fonts and layout */
 body {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   transition: background 0.4s ease, color 0.4s ease;
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-/* Dark mode background and text */
+/* THEME STYLING */
 html[data-theme="dark"] body {
-  background-color: #121212;
+  background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a);
   color: #e0e0e0;
 }
 
-/* Light mode background and text */
 html[data-theme="light"] body {
-  background-color: #f2f2f2;
-  color: #111;
+  background: linear-gradient(to bottom right, #ffffff, #eaeaea);
+  color: #1a1a1a;
 }
 
-/* Buttons (you can customize your classes more) */
+/* Buttons */
 button {
-  padding: 10px 20px;
+  padding: 12px 24px;
+  margin: 8px;
   border: none;
   border-radius: 6px;
-  font-size: 14px;
-  font-weight: bold;
-  margin: 5px;
-  transition: background 0.3s ease, color 0.3s ease;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* Specific buttons from your HTML */
+/* Artistic Buttons */
 .btn-neon {
-  background-color: #00ffff;
+  background: #00ffe1;
   color: #000;
-  box-shadow: 0 0 5px #00ffff;
+  box-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1 inset;
 }
 .btn-neon:hover {
-  background-color: #008b8b;
+  background: #00c9b7;
   color: #fff;
 }
 
 .btn-gradient {
-  background: linear-gradient(45deg, #ff7f50, #ff1493);
+  background: linear-gradient(45deg, #fc466b, #3f5efb);
   color: #fff;
+}
+.btn-gradient:hover {
+  filter: brightness(1.1);
 }
 
 .btn-cyberpunk {
-  background-color: #ffcc00;
+  background: #ffcc00;
   color: #000;
   box-shadow: 0 0 10px #ffcc00;
 }
+.btn-cyberpunk:hover {
+  background: #ffaa00;
+}
 
 .btn-glass {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
   color: #fff;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .btn-frosted {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.08);
   color: #fff;
   border: 1px solid #fff;
+}
+.btn-frosted:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .btn-pulse {
   background-color: #4caf50;
   color: white;
 }
+.btn-pulse:hover {
+  background-color: #45a049;
+}
 
 .btn-arcade {
   background-color: #ff69b4;
-  color: black;
+  color: #000;
+}
+.btn-arcade:hover {
+  background-color: #ff85c1;
 }
 
-textarea, input {
-  padding: 10px;
-  font-family: inherit;
+/* Form Elements */
+input, textarea {
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 6px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 60%;
-  margin-top: 10px;
+  margin-top: 12px;
+  width: 70%;
+  transition: all 0.3s ease;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #00ffe1;
+  box-shadow: 0 0 6px #00ffe1;
 }
 
 /* Table */
 table {
-  margin: 0 auto;
-  color: inherit;
+  margin: 30px auto;
   border-collapse: collapse;
+  color: inherit;
+  width: 80%;
 }
 table th, table td {
-  padding: 10px;
+  padding: 12px;
   border: 1px solid currentColor;
 }
 caption {
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 /* Footer */
 .logo footer {
-  margin-top: 40px;
-  color: inherit;
-  font-size: 12px;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  opacity: 0.6;
 }
-s
+
+/* Header */
+h1, h3, h6 {
+  margin: 20px 0;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+/* Additional Marquee Style */
+marquee {
+  font-size: 18px;
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+/* Container Styling */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
