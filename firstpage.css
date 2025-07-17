@@ -78,23 +78,26 @@ button {
 /* Glassy button with blur and transparency */
 .btn-glass {
   background: rgba(255, 255, 255, 0.05);
-  color: #fff;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+.btn-sunset {
+  background: linear-gradient(45deg, #ff6e7f, #bfe9ff);
+  color: #000;
+  box-shadow: 0 3px 6px rgba(255, 110, 127, 0.5);
 }
-.btn-glass:hover {
-  background: rgba(255, 255, 255, 0.2);
+.btn-sunset:hover {
+  filter: brightness(1.1);
 }
 
+
 /* Frosted glass effect with subtle border */
-.btn-frosted {
-  background: rgba(255, 255, 255, 0.08);
-  color: #fff;
-  border: 1px solid #fff;
+.btn-ocean {
+  background-color: #0077b6;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 119, 182, 0.4);
 }
-.btn-frosted:hover {
-  background: rgba(255, 255, 255, 0.2);
+.btn-ocean:hover {
+  background-color: #023e8a;
 }
+
 
 /* Green button with pulsing effect */
 .btn-pulse {
