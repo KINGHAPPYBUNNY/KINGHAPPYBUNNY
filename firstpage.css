@@ -161,6 +161,7 @@ caption {
 
 .logo {
   margin-top: 60px; /* Space above the logo */
+  bottom:0;
   font-size: 0.95rem; /* Slightly smaller text */
   color: inherit; /* Uses current theme text color */
   text-align: center;
