@@ -160,13 +160,10 @@ caption {
 /* === FOOTER/LOGO STYLING === */
 
 .logo {
-  position:fixed;
-  margin-top: 60px; /* Space above the logo */
-  bottom:0;
-  font-size: 0.95rem; /* Slightly smaller text */
-  color: inherit; /* Uses current theme text color */
-  text-align: center;
-  opacity: 0.8; /* Slight transparency */
-  padding: 20px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Light divider line */
+          position: fixed;
+          bottom: 0;
+                        width: 100%;
+                        text-align: center;
+                        color: red;
+                        text-shadow: 2px 2px 4px blue;
   }
