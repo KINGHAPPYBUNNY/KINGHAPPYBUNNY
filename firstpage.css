@@ -160,6 +160,7 @@ caption {
 /* === FOOTER/LOGO STYLING === */
 
 .logo {
+  position:fixed;
   margin-top: 60px; /* Space above the logo */
   bottom:0;
   font-size: 0.95rem; /* Slightly smaller text */
