@@ -90,12 +90,13 @@ button {
 
 /* Frosted glass effect with subtle border */
 .btn-ocean {
-  background-color: #0077b6;
+.btn-violet {
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
   color: #ffffff;
-  box-shadow: 0 4px 6px rgba(0, 119, 182, 0.4);
+  transition: transform 0.2s;
 }
-.btn-ocean:hover {
-  background-color: #023e8a;
+.btn-violet:hover {
+  transform: scale(1.05);
 }
 
 
