@@ -21,19 +21,215 @@ p {
 }
 
 /* Container */
-/* Removes default margin/padding and ensures box sizing includes border and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Base styling for the body element */
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern fonts */
-  transition: background 0.4s ease, color 0.4s ease; /* Smooth transitions for theme changes */
-  min-height: 100vh; /* Makes sure body takes at least full viewport height */
-  padding: 40px 20px; /* Adds space around content */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background 0.4s ease, color 0.4s ease;
+    min-height: 100vh;
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #e0f7fa, #dbeafe, #f0fdf4);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #1f2937;
+}
+
+/* Theme Styles */
+html[data-theme="dark"] body {
+    background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a);
+    color: #e0e0e0;
+}
+
+html[data-theme="light"] body {
+    background: linear-gradient(to bottom right, #ffffff, #eaeaea);
+    color: #1a1a1a;
+}
+
+/* Button Base */
+button {
+    padding: 12px 24px;
+    margin: 8px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Artistic Buttons */
+.btn-neon {
+    background: #00ffe1;
+    color: #000;
+    box-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1 inset;
+}
+.btn-neon:hover {
+    background: #00c9b7;
+    color: #fff;
+}
+
+.btn-gradient {
+    background: linear-gradient(45deg, #fc466b, #3f5efb);
+    color: #fff;
+}
+.btn-gradient:hover {
+    filter: brightness(1.1);
+}
+
+.btn-cyberpunk {
+    background: #ffcc00;
+    color: #000;
+    box-shadow: 0 0 10px #ffcc00;
+}
+.btn-cyberpunk:hover {
+    background: #ffaa00;
+}
+
+.btn-glass {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.btn-sunset {
+    background: linear-gradient(45deg, #ff6e7f, #bfe9ff);
+    color: #000;
+    box-shadow: 0 3px 6px rgba(255, 110, 127, 0.5);
+}
+.btn-sunset:hover {
+    filter: brightness(1.1);
+}
+
+.btn-violet {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: #ffffff;
+    transition: transform 0.2s;
+}
+.btn-violet:hover {
+    transform: scale(1.05);
+}
+
+.btn-pulse {
+    background-color: #4caf50;
+    color: white;
+}
+.btn-pulse:hover {
+    background-color: #45a049;
+}
+
+.btn-arcade {
+    background-color: #ff69b4;
+    color: #000;
+}
+.btn-arcade:hover {
+    background-color: #ff85c1;
+}
+
+/* Social Buttons */
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Facebook */
+.social-btn.facebook {
+    background-color: #1877f2;
+}
+.social-btn.facebook:hover {
+    background-color: #145dbf;
+}
+
+/* Twitter */
+.social-btn.twitter {
+    background-color: #1da1f2;
+}
+.social-btn.twitter:hover {
+    background-color: #0d8ddb;
+}
+
+/* Instagram */
+.social-btn.instagram {
+    background: radial-gradient(circle at 30% 30%, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+.social-btn.instagram:hover {
+    filter: brightness(1.1);
+}
+
+/* LinkedIn */
+.social-btn.linkedin {
+    background-color: #0077b5;
+}
+.social-btn.linkedin:hover {
+    background-color: #005582;
+}
+
+/* Logo */
+.logo {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #dc2626;
+    text-shadow: 1px 1px 2px #60a5fa;
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Menu Hover */
+.home:hover,
+.au:hover,
+.ci:hover,
+.credit:hover,
+.his:hover {
+    font-size: 20px;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+    color: white;
+}
+
+.home:hover {
+    background-color: #1e293b;
+}
+
+.au:hover {
+    background-color: #f97316;
+}
+
+.ci:hover {
+    background-color: #be123c;
+}
+
+.credit:hover {
+    background-color: #7c3aed;
+}
+
+.his:hover {
+    background-color: #2563eb;
+}
   text-align: center; /* Centers all text content */
 }
 
@@ -232,4 +428,5 @@ body {
 .his:hover {
     background-color: #2563eb;
 }
+
 
