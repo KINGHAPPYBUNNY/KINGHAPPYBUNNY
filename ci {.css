@@ -1,423 +1,145 @@
-/* Headings */
-h1 {
-    color: #1e3a8a; /* Deep blue */
-    text-shadow: 1px 1px 2px #93c5fd; /* Soft blue glow */
-}
-
-h6 {
-    color: #9333ea; /* Vibrant purple */
-    text-shadow: 1px 1px 2px #d8b4fe;
-}
-
-h3 {
-    color: #1e40af;
-}
-
-/* Paragraph text */
-p {
-    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
-    font-size: 20px;
-    color: #2f3e46;
-}
-
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body */
+/* =======================
+   Base Page Styling
+======================= */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: background 0.4s ease, color 0.4s ease;
-    min-height: 100vh;
-    padding: 40px 20px;
-    text-align: center;
-    background: linear-gradient(to bottom, #e0f7fa, #dbeafe, #f0fdf4);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: #1f2937;
+  padding: 10px;
+  text-align: center;
+  transition: background 0.5s ease, color 0.5s ease;
+  font-family: Arial, sans-serif;
 }
 
-/* Theme Styles */
-html[data-theme="dark"] body {
-    background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a);
-    color: #e0e0e0;
+/* =======================
+   Theme Styles
+======================= */
+[data-theme="dark"] {
+  background-color: #000;
+  color: #fff;
 }
 
-html[data-theme="light"] body {
-    background: linear-gradient(to bottom right, #ffffff, #eaeaea);
-    color: #1a1a1a;
+[data-theme="light"] {
+  background-color: #fff;
+  color: #000;
 }
 
-/* Button Base */
-button {
-    padding: 12px 24px;
-    margin: 8px;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
+/* =======================
+   Dark Mode Toggle Button
+======================= */
+.dark-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #111;
+  border: 2px solid #00ffff;
+  border-radius: 50px;
+  box-shadow: 0 0 10px #00ffff;
+  transition: all 0.4s ease;
+  z-index: 999;
 }
 
-/* Artistic Buttons */
-.btn-neon {
-    background: #00ffe1;
-    color: #000;
-    box-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1 inset;
-}
-.btn-neon:hover {
-    background: #00c9b7;
-    color: #fff;
+.dark-toggle:hover {
+  background-color: #00ffff;
+  color: #000;
+  box-shadow: 0 0 20px #00ffff;
 }
 
-.btn-gradient {
-    background: linear-gradient(45deg, #fc466b, #3f5efb);
-    color: #fff;
-}
-.btn-gradient:hover {
-    filter: brightness(1.1);
-}
-
-.btn-cyberpunk {
-    background: #ffcc00;
-    color: #000;
-    box-shadow: 0 0 10px #ffcc00;
-}
-.btn-cyberpunk:hover {
-    background: #ffaa00;
-}
-
-.btn-glass {
-    background: rgba(255, 255, 255, 0.05);
-}
-
-.btn-sunset {
-    background: linear-gradient(45deg, #ff6e7f, #bfe9ff);
-    color: #000;
-    box-shadow: 0 3px 6px rgba(255, 110, 127, 0.5);
-}
-.btn-sunset:hover {
-    filter: brightness(1.1);
-}
-
-.btn-violet {
-    background: linear-gradient(to right, #8e2de2, #4a00e0);
-    color: #ffffff;
-    transition: transform 0.2s;
-}
-.btn-violet:hover {
-    transform: scale(1.05);
-}
-
-.btn-pulse {
-    background-color: #4caf50;
-    color: white;
-}
-.btn-pulse:hover {
-    background-color: #45a049;
-}
-
-.btn-arcade {
-    background-color: #ff69b4;
-    color: #000;
-}
-.btn-arcade:hover {
-    background-color: #ff85c1;
-}
-
-/* Social Buttons */
-.social-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    margin: 8px;
-    transition: all 0.3s ease;
-}
-
-/* Facebook */
-.social-btn.facebook {
-    background-color: #1877f2;
-}
-.social-btn.facebook:hover {
-    background-color: #145dbf;
-}
-
-/* Twitter */
-.social-btn.twitter {
-    background-color: #1da1f2;
-}
-.social-btn.twitter:hover {
-    background-color: #0d8ddb;
-}
-
-/* Instagram */
-.social-btn.instagram {
-    background: radial-gradient(circle at 30% 30%, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-}
-.social-btn.instagram:hover {
-    filter: brightness(1.1);
-}
-
-/* LinkedIn */
-.social-btn.linkedin {
-    background-color: #0077b5;
-}
-.social-btn.linkedin:hover {
-    background-color: #005582;
-}
-
-/* Logo */
-.logo {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    color: #dc2626;
-    text-shadow: 1px 1px 2px #60a5fa;
-    font-size: 18px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-/* Menu Hover */
-.home:hover,
-.au:hover,
-.ci:hover,
-.credit:hover,
-.his:hover {
-    font-size: 20px;
-    transition: background-color 0.3s ease, font-size 0.3s ease;
-    color: white;
-}
-
-.home:hover {
-    background-color: #1e293b;
-}
-
-.au:hover {
-    background-color: #f97316;
-}
-
-.ci:hover {
-    background-color: #be123c;
-}
-
-.credit:hover {
-    background-color: #7c3aed;
-}
-
-.his:hover {
-    background-color: #2563eb;
-}
-  text-align: center; /* Centers all text content */
-}
-
-/* === THEME STYLING === */
-
-/* Dark theme background and text color */
-html[data-theme="dark"] body {
-  background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a); /* Dark gradient background */
-  color: #e0e0e0; /* Light gray text for contrast */
-}
-
-/* Light theme background and text color */
-html[data-theme="light"] body {
-  background: linear-gradient(to bottom right, #ffffff, #eaeaea); /* Light gradient */
-  color: #1a1a1a; /* Dark text for contrast */
-}
-
-/* === BUTTONS BASE STYLES === */
-
-button {
-  padding: 12px 24px; /* Button size */
-  margin: 8px; /* Space between buttons */
-  border: none; /* Remove default borders */
-  border-radius: 6px; /* Rounded corners */
-  font-size: 16px;
-  font-weight: 600; /* Slightly bold */
+/* =======================
+   Button Base Styles
+======================= */
+.btn-neon, .btn-gradient, .btn-cyberpunk, .btn-sunset, .btn-violet, .btn-glass {
+  padding: 10px 20px;
+  border: none;
   cursor: pointer;
-  transition: all 0.3s ease; /* Smooth interaction transitions */
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
-/* === ARTISTIC BUTTON STYLES === */
-
-/* Neon style button with glowing cyan color */
+/* Neon Button */
 .btn-neon {
-  background: #00ffe1;
-  color: #000;
-  box-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1 inset;
+  background-color: black;
+  color: cyan;
+  border: 2px solid cyan;
+  box-shadow: 0 0 5px cyan, 0 0 20px cyan;
 }
 .btn-neon:hover {
-  background: #00c9b7;
-  color: #fff;
+  background-color: cyan;
+  color: black;
+  box-shadow: 0 0 20px cyan, 0 0 40px cyan;
 }
 
-/* Gradient button from pink to blue */
+/* Gradient Button */
 .btn-gradient {
-  background: linear-gradient(45deg, #fc466b, #3f5efb);
-  color: #fff;
-}
-.btn-gradient:hover {
-  filter: brightness(1.1); /* Lightens on hover */
-}
-
-/* Cyberpunk-themed yellow glowing button */
-.btn-cyberpunk {
-  background: #ffcc00;
-  color: #000;
-  box-shadow: 0 0 10px #ffcc00;
-}
-.btn-cyberpunk:hover {
-  background: #ffaa00;
-}
-
-/* Glassy button with blur and transparency */
-.btn-glass {
-  background: rgba(255, 255, 255, 0.05);
-.btn-sunset {
-  background: linear-gradient(45deg, #ff6e7f, #bfe9ff);
-  color: #000;
-  box-shadow: 0 3px 6px rgba(255, 110, 127, 0.5);
-}
-.btn-sunset:hover {
-  filter: brightness(1.1);
-}
-
-
-/* Frosted glass effect with subtle border */
-
-.btn-violet {
-  background: linear-gradient(to right, #8e2de2, #4a00e0);
-  color: #ffffff;
-  transition: transform 0.2s;
-}
-.btn-violet:hover {
-  transform: scale(1.05);
-}
-
-
-/* Green button with pulsing effect */
-.btn-pulse {
-  background-color: #4caf50;
+  background: linear-gradient(45deg, #ff6b6b, #f8e71c);
   color: white;
 }
-.btn-pulse:hover {
-  background-color: #45a049;
+.btn-gradient:hover {
+  opacity: 0.8;
 }
 
-/* Vibrant pink arcade-style button */
-.btn-arcade {
-  background-color: #ff69b4;
+/* Cyberpunk Button */
+.btn-cyberpunk {
+  background-color: #ff00ff;
   color: #000;
+  border: 2px solid #ff00ff;
+  box-shadow: 0 0 5px #ff00ff, 0 0 20px #ff00ff;
 }
-.btn-arcade:hover {
-  background-color: #ff85c1;
-}
-/* Social media section */
-.social {
-    text-align: center;
-    margin-top: 20px;
+.btn-cyberpunk:hover {
+  background-color: #000;
+  color: #ff00ff;
 }
 
-.social i {
-    font-size: 40px;
-    margin: 0 15px;
-    color: #374151;
-    transition: all 0.3s ease;
+/* Sunset Button */
+.btn-sunset {
+  background: linear-gradient(45deg, #ff4500, #ff6347);
+  color: white;
+}
+.btn-sunset:hover {
+  opacity: 0.85;
 }
 
-/* Social icons hover */
-.fa-facebook:hover,
-.fa-twitter:hover {
-    color: #1d4ed8;
+/* Violet Button */
+.btn-violet {
+  background-color: #8a2be2;
+  color: white;
+  border: 2px solid #8a2be2;
+  box-shadow: 0 0 5px #8a2be2, 0 0 20px #8a2be2;
+}
+.btn-violet:hover {
+  background-color: white;
+  color: #8a2be2;
 }
 
-/* Instagram hover with official gradient */
-.fa-instagram:hover {
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 45px;
+/* Glass Button */
+.btn-glass {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.4);
 }
 
-/* Social text and links */
-.social p {
-    font-size: 16px;
-    margin-top: 10px;
+/* =======================
+   Social Media Icons
+======================= */
+.social a, .social i {
+  font-size: 30px;
+  margin: 10px;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+.social a:hover, .social i:hover {
+  color: cyan;
 }
 
-.fsocial a {
-    text-decoration: none;
-    color: #2563eb;
-}
-
-/* Background gradient */
-body {
-    background: linear-gradient(to bottom, #e0f7fa, #dbeafe, #f0fdf4);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: #1f2937;
-    margin: 0;
-    padding: 0;
-    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
-}
-
-/* Fixed logo styling */
-.logo {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    color: #dc2626;
-    text-shadow: 1px 1px 2px #60a5fa;
-    font-size: 18px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-/* Generic hover styles for menu buttons */
-.home:hover,
-.au:hover,
-.ci:hover,
-.credit:hover,
-.his:hover {
-    font-size: 20px;
-    transition: background-color 0.3s ease, font-size 0.3s ease;
-    color: white;
-}
-
-/* Individual background colors on hover */
-.home:hover {
-    background-color: #1e293b;
-}
-
-.au:hover {
-    background-color: #f97316;
-}
-
-.ci:hover {
-    background-color: #be123c;
-}
-
+/* =======================
+   Credit Section
+======================= */
 .credit:hover {
-    background-color: #7c3aed;
+  color: yellow;
+  text-decoration: underline;
 }
-
-.his:hover {
-    background-color: #2563eb;
-}
-
-
-
