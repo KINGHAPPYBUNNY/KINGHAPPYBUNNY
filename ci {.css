@@ -21,45 +21,123 @@ p {
 }
 
 /* Container */
-.container {
-    text-align: center;
-    display: inline-block;
-    margin: 5px;
-    padding: 10px 20px;
-    background-color: #f0f4f8;
-    color: #1f2937;
-    text-decoration: none;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* Removes default margin/padding and ensures box sizing includes border and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Button base and animation */
+/* Base styling for the body element */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern fonts */
+  transition: background 0.4s ease, color 0.4s ease; /* Smooth transitions for theme changes */
+  min-height: 100vh; /* Makes sure body takes at least full viewport height */
+  padding: 40px 20px; /* Adds space around content */
+  text-align: center; /* Centers all text content */
+}
+
+/* === THEME STYLING === */
+
+/* Dark theme background and text color */
+html[data-theme="dark"] body {
+  background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a); /* Dark gradient background */
+  color: #e0e0e0; /* Light gray text for contrast */
+}
+
+/* Light theme background and text color */
+html[data-theme="light"] body {
+  background: linear-gradient(to bottom right, #ffffff, #eaeaea); /* Light gradient */
+  color: #1a1a1a; /* Dark text for contrast */
+}
+
+/* === BUTTONS BASE STYLES === */
+
 button {
-    transition: background-color 0.5s ease;
-    animation-name: col_example;
-    animation-duration: 10s;
-    background-color: #3b82f6;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
+  padding: 12px 24px; /* Button size */
+  margin: 8px; /* Space between buttons */
+  border: none; /* Remove default borders */
+  border-radius: 6px; /* Rounded corners */
+  font-size: 16px;
+  font-weight: 600; /* Slightly bold */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth interaction transitions */
 }
 
-button:hover {
-    background-color: #2563eb;
+/* === ARTISTIC BUTTON STYLES === */
+
+/* Neon style button with glowing cyan color */
+.btn-neon {
+  background: #00ffe1;
+  color: #000;
+  box-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1 inset;
+}
+.btn-neon:hover {
+  background: #00c9b7;
+  color: #fff;
 }
 
-/* Keyframe for button text color animation */
-@keyframes col_example {
-    from {
-        color: #3b82f6;
-    }
-    to {
-        color: #f87171;
-    }
+/* Gradient button from pink to blue */
+.btn-gradient {
+  background: linear-gradient(45deg, #fc466b, #3f5efb);
+  color: #fff;
+}
+.btn-gradient:hover {
+  filter: brightness(1.1); /* Lightens on hover */
 }
 
+/* Cyberpunk-themed yellow glowing button */
+.btn-cyberpunk {
+  background: #ffcc00;
+  color: #000;
+  box-shadow: 0 0 10px #ffcc00;
+}
+.btn-cyberpunk:hover {
+  background: #ffaa00;
+}
+
+/* Glassy button with blur and transparency */
+.btn-glass {
+  background: rgba(255, 255, 255, 0.05);
+.btn-sunset {
+  background: linear-gradient(45deg, #ff6e7f, #bfe9ff);
+  color: #000;
+  box-shadow: 0 3px 6px rgba(255, 110, 127, 0.5);
+}
+.btn-sunset:hover {
+  filter: brightness(1.1);
+}
+
+
+/* Frosted glass effect with subtle border */
+
+.btn-violet {
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: #ffffff;
+  transition: transform 0.2s;
+}
+.btn-violet:hover {
+  transform: scale(1.05);
+}
+
+
+/* Green button with pulsing effect */
+.btn-pulse {
+  background-color: #4caf50;
+  color: white;
+}
+.btn-pulse:hover {
+  background-color: #45a049;
+}
+
+/* Vibrant pink arcade-style button */
+.btn-arcade {
+  background-color: #ff69b4;
+  color: #000;
+}
+.btn-arcade:hover {
+  background-color: #ff85c1;
+}
 /* Social media section */
 .social {
     text-align: center;
@@ -154,3 +232,4 @@ body {
 .his:hover {
     background-color: #2563eb;
 }
+
