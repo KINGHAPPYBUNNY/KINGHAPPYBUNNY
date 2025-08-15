@@ -52,6 +52,13 @@
       box-shadow: 0 0 20px #00ffff;
     }
         </style>
+    <script>
+    function toggleDarkMode() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute("data-theme");
+      html.setAttribute("data-theme", currentTheme === "dark" ? "light" : "dark");
+    }
+    </script>
 </head>
 
 <body>
@@ -77,6 +84,7 @@
     <p>To be part of our team, upload your documents <a href="upload.html">here</a></p>
     for complaints and other queries<a href="C:\Users\TABO KUNOLU\Desktop\www.demo.com\new 2.html">click here</a>
     <p>for feedback <a href="Feedback.html">here</a></p>
+
 
 
 
