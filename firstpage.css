@@ -77,7 +77,7 @@ button {
 
 /* Glassy button with blur and transparency */
 .btn-glass {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05);}
 .btn-sunset {
   background: linear-gradient(45deg, #ff6e7f, #bfe9ff);
   color: #000;
@@ -168,3 +168,4 @@ caption {
                         color: red;
                         text-shadow: 2px 2px 4px blue;
   }
+
