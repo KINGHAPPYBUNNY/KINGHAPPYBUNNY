@@ -126,16 +126,25 @@ body {
 /* =======================
    Social Media Icons
 ======================= */
-.social a, .social i {
-  font-size: 30px;
-  margin: 10px;
-  color: inherit;
-  transition: color 0.3s ease;
-}
-.social a:hover, .social i:hover {
-  color: cyan;
-}
+.social a {
+        font-size: 28px;
+        margin: 0 10px;
+        text-decoration: none;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
 
+    /* Default colors for each icon */
+    .social .fa-facebook { color: #1877F2; }   /* Blue */
+    .social .fa-twitter { color: #1DA1F2; }    /* Light Blue */
+    .social .fa-linkedin { color: #0A66C2; }   /* LinkedIn Blue */
+    .social .fa-instagram { color: #E4405F; }  /* Pink/Red */
+    .social .fa-whatsapp { color: #25D366; }   /* Green */
+    .social .fa-envelope { color: #EA4335; }   /* Gmail Red */
+
+    /* Hover effect: slightly enlarge */
+    .social a:hover {
+        transform: scale(1.2);
+    }
 /* =======================
    Credit Section
 ======================= */
@@ -143,3 +152,4 @@ body {
   color: yellow;
   text-decoration: underline;
 }
+
