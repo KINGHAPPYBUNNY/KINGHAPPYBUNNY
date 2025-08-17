@@ -1,12 +1,4 @@
-/* =======================
-   Base Page Styling
-======================= */
-body {
-  padding: 10px;
-  text-align: center;
-  transition: background 0.5s ease, color 0.5s ease;
-  font-family: Arial, sans-serif;
-}
+
 
 /* =======================
    Theme Styles
@@ -249,6 +241,7 @@ button {
                         color: red;
                         text-shadow: 2px 2px 4px blue;
 }
+
 
 
 
