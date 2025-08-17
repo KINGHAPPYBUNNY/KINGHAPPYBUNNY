@@ -1,132 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <title>www.kunoluarts.com/contact</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/2c1a998ce.js" crossorigin="anonymous"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> 
+<html>
 
-  <style>
+<head>
+    <meta charset="UTF-8">
+    <title>www.kunoluarts.com/contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" TYPE="text/css" href='ci {.css'>
+    <script src="https://kit.awesome.com/2c1a998ce.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> 
+    <style>
     body {
-      font-family: Arial, sans-serif;
       padding: 10px;
-      margin: 0;
+      text-align: none;
       transition: background 0.5s ease, color 0.5s ease;
     }
-
+        
     h1 {
       margin-bottom: 30px;
     }
 
-    /* 🔹 Button container (responsive layout) */
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin: 20px 0;
-    }
-
-    .container a button {
-      padding: 12px 20px;
-      font-size: 16px;
-      font-weight: 600;
-      border-radius: 8px;
-      border: none;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      min-width: 140px;
-    }
-
-    /* 🔹 Neon Style */
-    .btn-neon {
-      background: black;
-      color: #0ff;
-      border: 2px solid #0ff;
-      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
-    }
-    .btn-neon:hover {
-      background: #0ff;
-      color: black;
-    }
-
-    /* 🔹 Gradient Style */
-    .btn-gradient {
-      background: linear-gradient(45deg, #ff0080, #7928ca);
-      color: white;
-    }
-    .btn-gradient:hover {
-      opacity: 0.85;
-    }
-
-    /* 🔹 Cyberpunk Style */
-    .btn-cyberpunk {
-      background: #111;
-      color: #f5f5f5;
-      border: 2px solid #ff00ff;
-      text-transform: uppercase;
-    }
-    .btn-cyberpunk:hover {
-      background: #ff00ff;
-      color: black;
-    }
-
-    /* 🔹 Sunset Style */
-    .btn-sunset {
-      background: linear-gradient(90deg, #ff7e5f, #feb47b);
-      color: white;
-    }
-    .btn-sunset:hover {
-      opacity: 0.9;
-    }
-
-    /* 🔹 Violet Style */
-    .btn-violet {
-      background: linear-gradient(135deg, #8e2de2, #4a00e0);
-      color: white;
-    }
-    .btn-violet:hover {
-      opacity: 0.9;
-    }
-
-    /* 🔹 Mobile Responsive */
-    @media (max-width: 600px) {
-      .container {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-      }
-
-      .container a button {
-        width: 90%;
-        font-size: 18px;
-      }
-    }
-
-    /* 🔹 Social Media Icons */
-    .social {
-      margin: 20px 0;
-      display: flex;
-      justify-content: center;
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
-      font-size: 28px;
+      margin-top: 20px;
     }
 
-    .social a {
-      text-decoration: none;
+    button {
+      cursor: pointer;
     }
 
-    .fa-facebook { color: #1877f2; }
-    .fa-twitter { color: #1da1f2; }
-    .fa-linkedin { color: #0077b5; }
-    .fa-instagram { color: #e4405f; }
-    .fa-whatsapp { color: #25d366; }
-    .fa-envelope { color: #d44638; }
-
-    /* 🔹 Dark Mode Toggle */
+    /* Stylish dark mode toggle */
     .dark-toggle {
       position: fixed;
       top: 20px;
@@ -147,54 +51,61 @@
       color: #000;
       box-shadow: 0 0 20px #00ffff;
     }
-
-    footer {
-      text-align: center;
-      margin-top: 30px;
-      font-size: 14px;
-      color: gray;
-    }
-  </style>
-
-  <script>
+        </style>
+    <script>
     function toggleDarkMode() {
       const html = document.documentElement;
       const currentTheme = html.getAttribute("data-theme");
       html.setAttribute("data-theme", currentTheme === "dark" ? "light" : "dark");
     }
-  </script>
+    </script>
 </head>
 
 <body>
-  <!-- Theme Switch -->
-  <button class="dark-toggle" onclick="toggleDarkMode()">🌓 Theme</button>
-  
-  <!-- Navigation Buttons -->
-  <div class="container">
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌓 Theme</button>
+    
+    <div class="container">
     <a href="first page.html"><button class="btn-neon">Home</button></a>
     <a href="aboutus.html"><button class="btn-gradient">About Us</button></a>
     <a href="contact.html"><button class="btn-cyberpunk">Contact Info</button></a>
     <a href="credits.html"><button class="btn-sunset">Credits</button></a>
     <a href="history.html"><button class="btn-violet">History</button></a>
   </div>
+    </br>
+    <p>to contact our team for anthing you can use the following </p>
 
-  <p>To contact our team for anything you can use the following:</p>
 
-  <!-- Social Media Links -->
-  <div class="social">
-    <a href="https://www.facebook.com/profile.php?id=61577072231328" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-    <i class="fa-brands fa-twitter"></i>
-    <i class="fa-brands fa-linkedin"></i>
-    <a href="https://www.instagram.com/tabo_kunolu?igsh=MWZ2NXZmdmUwdXphdQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://wa.me/260973168360" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-    <a href="mailto:tabokunolu@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+    <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61577072231328" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <!--instagram -->
+        <a href="https://www.instagram.com/tabo_kunolu?igsh=MWZ2NXZmdmUwdXphdQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <!-- WhatsApp -->
+    <a href="https://wa.me/260973168360" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+        <!-- Gmail -->
+    <a href="mailto:tabokunolu@gmail.com" target="_blank">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+    </div></br>
+    <p>To be part of our team, upload your documents <a href="upload.html">here</a></p>
+    for complaints and other queries<a href="mailto: tabohkunolu@gmail.com" target="_blank">click here</a>
+    <p>for feedback <a href="Feedback.html">here</a></p>
+</br>
+    <div class="logo">
+    <footer>&copy; Kunolu Arts 2024</footer>
   </div>
-
-  <p>To be part of our team, upload your documents <a href="upload.html">here</a>.</p>
-  <p>For complaints and other queries <a href="mailto:tabohkunolu@gmail.com" target="_blank">click here</a>.</p>
-  <p>For feedback <a href="Feedback.html">here</a>.</p>
-
-  <!-- Footer -->
-  <footer>&copy; Kunolu Arts 2024</footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
