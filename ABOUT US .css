@@ -1,175 +1,151 @@
-body {
-    background-color: black;
+/* === RESET AND BASE LAYOUT === */
+
+/* Removes default margin/padding and ensures box sizing includes border and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Base styling for the body element */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern fonts */
+  transition: background 0.4s ease, color 0.4s ease; /* Smooth transitions for theme changes */
+  min-height: 100vh; /* Makes sure body takes at least full viewport height */
+  padding: 40px 20px; /* Adds space around content */
+  text-align: center; /* Centers all text content */
 }
+
+/* === THEME STYLING === */
+
+/* Dark theme background and text color */
+html[data-theme="dark"] body {
+  background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a); /* Dark gradient background */
+  color: #e0e0e0; /* Light gray text for contrast */
+}
+
+/* Light theme background and text color */
+html[data-theme="light"] body {
+  background: linear-gradient(to bottom right, #ffffff, #eaeaea); /* Light gradient */
+  color: #1a1a1a; /* Dark text for contrast */
+}
+
+/* === BUTTONS BASE STYLES === */
+
+button {
+  padding: 12px 24px; /* Button size */
+  margin: 8px; /* Space between buttons */
+  border: none; /* Remove default borders */
+  border-radius: 6px; /* Rounded corners */
+  font-size: 16px;
+  font-weight: 600; /* Slightly bold */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth interaction transitions */
+}
+
+/* === ARTISTIC BUTTON STYLES === */
+
+/* Neon style button with glowing cyan color */
+.btn-neon {
+  background: #00ffe1;
+  color: #000;
+  box-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1 inset;
+}
+.btn-neon:hover {
+  background: #00c9b7;
+  color: #fff;
+}
+
+/* Gradient button from pink to blue */
+.btn-gradient {
+  background: linear-gradient(45deg, #fc466b, #3f5efb);
+  color: #fff;
+}
+.btn-gradient:hover {
+  filter: brightness(1.1); /* Lightens on hover */
+}
+
+/* Cyberpunk-themed yellow glowing button */
+.btn-cyberpunk {
+  background: #ffcc00;
+  color: #000;
+  box-shadow: 0 0 10px #ffcc00;
+}
+.btn-cyberpunk:hover {
+  background: #ffaa00;
+}
+
+/* Glassy button with blur and transparency */
+.btn-glass {
+  background: rgba(255, 255, 255, 0.05);}
+.btn-sunset {
+  background: linear-gradient(45deg, #ff6e7f, #bfe9ff);
+  color: #000;
+  box-shadow: 0 3px 6px rgba(255, 110, 127, 0.5);
+}
+.btn-sunset:hover {
+  filter: brightness(1.1);
+}
+
+
+/* Frosted glass effect with subtle border */
+
+.btn-violet {
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: #ffffff;
+  transition: transform 0.2s;
+}
+.btn-violet:hover {
+  transform: scale(1.05);
+}
+
+
+/* Green button with pulsing effect */
+.btn-pulse {
+  background-color: #4caf50;
+  color: white;
+}
+.btn-pulse:hover {
+  background-color: #45a049;
+}
+
+/* Vibrant pink arcade-style button */
+.btn-arcade {
+  background-color: #ff69b4;
+  color: #000;
+}
+.btn-arcade:hover {
+  background-color: #ff85c1;
+}
+
+/* === FORM ELEMENTS STYLING === */
+
+input, textarea {
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 12px;
+  width: 70%;
+  transition: all 0.3s ease;
+}
+
+/* Focus effect for form fields */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #00ffe1;
+  box-shadow: 0 0 6px #00ffe1;
+}
+
+/* === FOOTER/LOGO STYLING === */
 
 .logo {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    color: red;
-    text-shadow: 2px 2px 4px blue;
-}
+          position: fixed;
+          bottom: 0;
+                        width: 100%;
+                        text-align: center;
+                        color: red;
+                        text-shadow: 2px 2px 4px blue;
+                              }
+    
 
-
-/*for the footer*/
-
-.home:hover {
-    background-color: rgb(59, 35, 35);
-    font-size: 20px;
-    transition-property: color, font-size;
-    transition-duration: 2ms, 0ms;
-}
-
-
-/*to make the buttton zoom in and change colors*/
-
-.au:hover {
-    background-color: rgb(196, 106, 106);
-    font-size: 20px;
-    transition-property: color, font-size;
-    transition-duration: 2ms, 0ms;
-}
-
-
-/*to make the buttton zoom in and change colors*/
-
-.ci:hover {
-    background-color: rgb(131, 37, 37);
-    font-size: 20px;
-    transition-property: color, font-color;
-    transition-duration: 2ms, 0ms;
-}
-
-
-/*to make the buttton zoom in and change colors*/
-
-.credit:hover {
-    background-color: blueviolet;
-    font-size: 20px;
-    transition-property: color, font-size;
-    transition-duration: 2ms, 0ms;
-}
-
-
-/*to make the buttton zoom in and change colors*/
-
-.his:hover {
-    background-color: royalblue;
-    font-size: 20px;
-    transition-property: color, font-size;
-    transition-duration: 2ms, 0ms;
-}
-
-
-/*to make the buttton zoom in and change colors*/
-
-button {
-    transition: background-color 0.5s ease;
-}
-
-@keyframes col_example {
-    from {
-        color: blue;
-    }
-    to {
-        color: RED;
-    }
-}
-
-button {
-    animation-name: col_example;
-    animation-duration: 10s;
-}
-
-.menu {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-}
-
-.menu.active {
-    width: 400px;
-    height: 400px;
-}
-
-.menu li {
-    position: absolute;
-    list-style-type: none;
-    transform: translate(0, 0) scale(0);
-    transition: 0.5s;
-    opacity: 0;
-    width: 60px;
-    height: 60px;
-}
-
-.menu.active li {
-    transform: translate(var(--x), var(--y)) scale(1);
-    opacity: 1;
-    transition-delay: calc(0.1s * var(--i));
-} 
-/* Shared button style */
-button {
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    margin: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-/* Home Button - Royal Blue */
-.home {
-    background-color: #1d4ed8;  /* Blue-700 */
-    color: #ffffff;
-}
-.home:hover {
-    background-color: #3b82f6;  /* Blue-500 */
-    transform: scale(1.05);
-}
-
-/* About Us Button - Gold on Dark */
-.au {
-    background-color: #111827;  /* Gray-900 */
-    color: #facc15;             /* Yellow-400 */
-}
-.au:hover {
-    background-color: #facc15;
-    color: #111827;
-    transform: scale(1.05);
-}
-
-/* Contact Info Button - Teal & Soft Cyan */
-.ci {
-    background-color: #0f766e;  /* Teal-700 */
-    color: #e0f2f1;             /* Cyan-50 */
-}
-.ci:hover {
-    background-color: #5eead4;  /* Teal-300 */
-    color: #0f766e;
-    transform: scale(1.05);
-}
-
-/* Credits Button - Purple Vibe */
-.credit {
-    background-color: #6d28d9;  /* Purple-700 */
-    color: #f3e8ff;             /* Purple-50 */
-}
-.credit:hover {
-    background-color: #c084fc;  /* Purple-300 */
-    color: #3b0764;
-    transform: scale(1.05);
-}
