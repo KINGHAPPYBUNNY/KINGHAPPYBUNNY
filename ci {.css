@@ -1,20 +1,35 @@
-
-
 /* =======================
-   Theme Styles
+   RESET AND BASE LAYOUT
 ======================= */
-[data-theme="dark"] {
-  background-color: #000;
-  color: #fff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-[data-theme="light"] {
-  background-color: #fff;
-  color: #000;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 0.4s ease, color 0.4s ease;
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 /* =======================
-   Dark Mode Toggle Button
+   THEME STYLING
+======================= */
+html[data-theme="dark"] body {
+  background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a);
+  color: #e0e0e0;
+}
+
+html[data-theme="light"] body {
+  background: linear-gradient(to bottom right, #ffffff, #eaeaea);
+  color: #1a1a1a;
+}
+
+/* =======================
+   DARK MODE TOGGLE BUTTON
 ======================= */
 .dark-toggle {
   position: fixed;
@@ -30,10 +45,127 @@
   transition: all 0.4s ease;
   z-index: 999;
 }
-
 .dark-toggle:hover {
   background-color: #00ffff;
   color: #000;
+  box-shadow: 0 0 20px #00ffff;
+}
+
+/* =======================
+   BUTTON BASE STYLES
+======================= */
+button {
+  padding: 12px 24px;
+  margin: 8px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* =======================
+   ARTISTIC BUTTON STYLES
+======================= */
+
+/* Neon */
+.btn-neon {
+  background: #00ffe1;
+  color: #000;
+  box-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1 inset;
+}
+.btn-neon:hover {
+  background: #00c9b7;
+  color: #fff;
+}
+
+/* Gradient */
+.btn-gradient {
+  background: linear-gradient(45deg, #fc466b, #3f5efb);
+  color: #fff;
+}
+.btn-gradient:hover {
+  filter: brightness(1.1);
+}
+
+/* Cyberpunk */
+.btn-cyberpunk {
+  background: #ffcc00;
+  color: #000;
+  box-shadow: 0 0 10px #ffcc00;
+}
+.btn-cyberpunk:hover {
+  background: #ffaa00;
+}
+
+/* Sunset */
+.btn-sunset {
+  background: linear-gradient(45deg, #ff6e7f, #bfe9ff);
+  color: #000;
+  box-shadow: 0 3px 6px rgba(255, 110, 127, 0.5);
+}
+.btn-sunset:hover {
+  filter: brightness(1.1);
+}
+
+/* Violet */
+.btn-violet {
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: #fff;
+  transition: transform 0.2s;
+}
+.btn-violet:hover {
+  transform: scale(1.05);
+}
+
+/* Glass */
+.btn-glass {
+  background: rgba(255, 255, 255, 0.05);
+  color: #000;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* =======================
+   SOCIAL MEDIA ICONS
+======================= */
+.social a {
+  font-size: 28px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.social .fa-facebook { color: #1877F2; }
+.social .fa-twitter { color: #1DA1F2; }
+.social .fa-linkedin { color: #0A66C2; }
+.social .fa-instagram { color: #E4405F; }
+.social .fa-whatsapp { color: #25D366; }
+.social .fa-envelope { color: #EA4335; }
+.social a:hover { transform: scale(1.2); }
+
+/* =======================
+   CREDIT SECTION
+======================= */
+.credit:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+/* =======================
+   FOOTER / LOGO
+======================= */
+.logo {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: red;
+  text-shadow: 2px 2px 4px blue;
+}
   box-shadow: 0 0 20px #00ffff;
 }
 
@@ -241,6 +373,7 @@ button {
                         color: red;
                         text-shadow: 2px 2px 4px blue;
 }
+
 
 
 
